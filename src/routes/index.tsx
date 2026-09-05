@@ -1,4 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+
+import { Reviews } from "@/components/Reviews";
+import { ReservationForm } from "@/components/ReservationForm";
 
 import heroImg from "@/assets/hero.jpg";
 import aboutImg from "@/assets/about.jpg";
@@ -55,21 +58,24 @@ function Index() {
             <a href="#about" className="transition-colors hover:text-terracotta">
               About
             </a>
-            <a href="#menu" className="transition-colors hover:text-terracotta">
+            <Link to="/menu" className="transition-colors hover:text-terracotta">
               Menu
-            </a>
+            </Link>
             <a href="#gallery" className="transition-colors hover:text-terracotta">
               Gallery
+            </a>
+            <a href="#reviews" className="transition-colors hover:text-terracotta">
+              Reviews
             </a>
             <a href="#visit" className="font-medium text-ink transition-colors hover:text-terracotta">
               Visit
             </a>
           </nav>
           <a
-            href="#visit"
+            href="#reserve"
             className="rounded-full bg-terracotta px-4 py-2 text-[13px] font-medium text-cream ring-1 ring-black/5 transition-colors hover:bg-wine"
           >
-            Find us
+            Book a table
           </a>
         </div>
       </header>
@@ -189,12 +195,12 @@ function Index() {
                 From our table
               </h2>
             </div>
-            <a
-              href="#visit"
+            <Link
+              to="/menu"
               className="hidden border-b border-ink/30 pb-1 text-sm font-medium text-ink transition-colors hover:border-terracotta sm:inline"
             >
               Full menu
-            </a>
+            </Link>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -349,6 +355,35 @@ function Index() {
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
+        </div>
+      </section>
+
+      <Reviews />
+
+      {/* RESERVE */}
+      <section id="reserve" className="scroll-mt-20 bg-ink text-cream">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-gold">
+              დაჯავშნა · Reserve
+            </p>
+            <h2 className="mt-3 text-balance font-display text-4xl font-semibold md:text-5xl">
+              Book the long table
+            </h2>
+            <p className="mt-5 max-w-[36ch] text-pretty text-cream/70">
+              Send a request and we'll call back to confirm. Courtyard tables go quickly on
+              Friday and Saturday evenings.
+            </p>
+            <Link
+              to="/menu"
+              className="mt-7 inline-block border-b border-cream/40 pb-1 text-sm font-medium text-cream transition-colors hover:border-gold hover:text-gold"
+            >
+              See the full menu →
+            </Link>
+          </div>
+          <div className="md:col-span-7">
+            <ReservationForm />
+          </div>
         </div>
       </section>
 
