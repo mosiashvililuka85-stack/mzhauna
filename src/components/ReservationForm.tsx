@@ -19,11 +19,12 @@ const schema = z.object({
 const empty = { name: "", phone: "", date: "", time: "19:30", guests: "2", notes: "" };
 
 export function ReservationForm() {
-  const [values, setValues] = useState<Record<string, string>>(empty);
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  type Fields = typeof empty;
+  const [values, setValues] = useState<Fields>(empty);
+  const [errors, setErrors] = useState<Partial<Record<keyof Fields, string>>>({});
   const [done, setDone] = useState(false);
 
-  function set(key: string, value: string) {
+  function set(key: keyof Fields, value: string) {
     setValues((p) => ({ ...p, [key]: value }));
     setErrors((p) => ({ ...p, [key]: "" }));
   }
@@ -32,8 +33,9 @@ export function ReservationForm() {
     e.preventDefault();
     const parsed = schema.safeParse(values);
     if (!parsed.success) {
-      const next: Record<string, string> = {};
-      for (const issue of parsed.error.issues) next[String(issue.path[0])] = issue.message;
+      const next: Partial<Record<keyof Fields, string>> = {};
+      for (const issue of parsed.error.issues)
+        next[issue.path[0] as keyof Fields] = issue.message;
       setErrors(next);
       toast.error("Please check the highlighted fields");
       return;

@@ -10,7 +10,7 @@ export function Reviews() {
     return () => clearInterval(id);
   }, []);
 
-  const r = reviews[i];
+  const r = reviews[i] ?? reviews[0]!;
 
   return (
     <section id="reviews" className="border-y border-ink/10 bg-paper">
