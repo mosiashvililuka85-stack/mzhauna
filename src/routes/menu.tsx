@@ -24,7 +24,7 @@ export const Route = createFileRoute("/menu")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: MenuPage;
+  component: MenuPage,
 });
 
 function Section({ section }: { section: MenuSection }) {
