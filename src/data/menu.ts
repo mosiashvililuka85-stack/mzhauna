@@ -239,6 +239,17 @@ export const foodSections: MenuSection[] = [
 
 export const drinkSections: MenuSection[] = [
   {
+    id: "wine",
+    ka: "ღვინო",
+    en: "Wine",
+    items: [
+      { ka: "რქაწითელი ქვევრი", en: "Rkatsiteli Qvevri, white dry", note: "150 ml / 0.75 L", price: "12 / 60 ₾" },
+      { ka: "საფერავი", en: "Saperavi, red dry", note: "150 ml / 0.75 L", price: "13 / 65 ₾" },
+      { ka: "მანავის მწვანე", en: "Manavi Mtsvane, white", note: "150 ml / 0.75 L", price: "18 / 90 ₾" },
+      { ka: "რქაწითელი ქვევრი (დრაფტი)", en: "Rkatsiteli Qvevri, draft", note: "1 L", price: "12 ₾" },
+    ],
+  },
+  {
     id: "sparkling",
     ka: "ცქრიალა ღვინო",
     en: "Sparkling wine",
@@ -286,6 +297,19 @@ export const drinkSections: MenuSection[] = [
       },
       { ka: "ასკანელი ძმები 5*", en: "Askaneli Brothers 5* brandy", note: "50 ml", price: "6 ₾" },
       { ka: "სან ხოსე", en: "San Jose tequila", note: "50 ml", price: "6 ₾" },
+    ],
+  },
+  {
+    id: "cocktails",
+    ka: "კოქტეილები",
+    en: "Cocktails",
+    items: [
+      { ka: "B-52", en: "B-52", note: "Baileys, Kahlua, Cointreau", price: "25 ₾" },
+      { ka: "ჯინ ტონიკი", en: "Gin & tonic", note: "Gin, tonic, lemon", price: "15 ₾" },
+      { ka: "კოსმოპოლიტენი", en: "Cosmopolitan", note: "Vodka, Cointreau, juice", price: "15 ₾" },
+      { ka: "მარგარიტა", en: "Margarita", note: "Tequila, Cointreau", price: "15 ₾" },
+      { ka: "ლონგ აილენდი", en: "Long Island", note: "Vodka, tequila, rum, gin, Cointreau", price: "15 ₾" },
+      { ka: "აპეროლ შპრიცი", en: "Aperol spritz", note: "Aperol, sparkling wine, tonic", price: "15 ₾" },
     ],
   },
 ];
