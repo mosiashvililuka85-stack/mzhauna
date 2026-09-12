@@ -3,17 +3,25 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reviews } from "@/components/Reviews";
 import { ReservationForm } from "@/components/ReservationForm";
 
-import heroImg from "@/assets/hero.jpg";
-import aboutImg from "@/assets/about.jpg";
+import heroAsset from "@/assets/interior-long-table-sunflowers.jpg.asset.json";
+import aboutAsset from "@/assets/interior-bar-guitar.jpg.asset.json";
 import menuKhinkali from "@/assets/menu-khinkali.jpg";
 import menuKhachapuri from "@/assets/menu-khachapuri.jpg";
 import menuSalad from "@/assets/menu-salad.jpg";
-import galleryTableware from "@/assets/gallery-tableware.jpg";
-import galleryWine from "@/assets/gallery-wine.jpg";
-import galleryTable from "@/assets/gallery-table.jpg";
-import galleryBread from "@/assets/gallery-bread.jpg";
-import galleryLantern from "@/assets/gallery-lantern.jpg";
+import galleryLongTableAsset from "@/assets/interior-long-table-blue-chairs.jpg.asset.json";
+import galleryMountainMuralAsset from "@/assets/interior-mountain-mural.jpg.asset.json";
+import galleryWideRoomAsset from "@/assets/interior-dining-room-wide.jpg.asset.json";
+import galleryStaircaseAsset from "@/assets/interior-dining-room-staircase.jpg.asset.json";
+import galleryWindowDetailAsset from "@/assets/interior-table-window-dolls.jpg.asset.json";
 import mapImg from "@/assets/map.jpg";
+
+const heroImg = heroAsset.url;
+const aboutImg = aboutAsset.url;
+const galleryLongTable = galleryLongTableAsset.url;
+const galleryMountainMural = galleryMountainMuralAsset.url;
+const galleryWideRoom = galleryWideRoomAsset.url;
+const galleryStaircase = galleryStaircaseAsset.url;
+const galleryWindowDetail = galleryWindowDetailAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
