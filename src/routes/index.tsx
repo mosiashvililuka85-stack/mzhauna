@@ -5,9 +5,12 @@ import { ReservationForm } from "@/components/ReservationForm";
 
 import heroAsset from "@/assets/interior-long-table-sunflowers.jpg.asset.json";
 import aboutAsset from "@/assets/interior-bar-guitar.jpg.asset.json";
-import menuKhinkali from "@/assets/menu-khinkali.jpg";
-import menuKhachapuri from "@/assets/menu-khachapuri.jpg";
-import menuSalad from "@/assets/menu-salad.jpg";
+import menuKhinkaliAsset from "@/assets/menu-khinkali-real.jpg.asset.json";
+import menuKhachapuriAsset from "@/assets/menu-khachapuri-real.jpg.asset.json";
+import menuSaladAsset from "@/assets/menu-salad-real.jpg.asset.json";
+const menuKhinkali = menuKhinkaliAsset.url;
+const menuKhachapuri = menuKhachapuriAsset.url;
+const menuSalad = menuSaladAsset.url;
 import galleryLongTableAsset from "@/assets/interior-long-table-blue-chairs.jpg.asset.json";
 import galleryMountainMuralAsset from "@/assets/interior-mountain-mural.jpg.asset.json";
 import galleryWideRoomAsset from "@/assets/interior-dining-room-wide.jpg.asset.json";
