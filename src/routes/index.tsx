@@ -165,7 +165,7 @@ function Index() {
         <div className="md:col-span-5">
           <img
             src={aboutImg}
-            alt="Warm Georgian old-town courtyard with terracotta walls, hanging lanterns, and a wooden dinner table"
+            alt="Warm brick-walled dining room with bar, guitar and atmospheric lighting at Mzhauna"
             width={1024}
             height={1280}
             loading="lazy"
