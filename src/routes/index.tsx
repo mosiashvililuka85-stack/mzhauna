@@ -320,44 +320,44 @@ function Index() {
           არქივი · The room
         </p>
         <h2 className="mt-3 text-balance font-display text-4xl font-semibold md:text-5xl">
-          A courtyard that glows
+          The stone room
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
           <img
-            src={galleryTableware}
-            alt="Clay plates and craft ceramic tableware on walnut wood"
+            src={galleryLongTable}
+            alt="Long wooden supra table with blue cushioned chairs, sunflowers and crystal glasses"
             width={1024}
             height={1280}
             loading="lazy"
             className="col-span-2 row-span-2 aspect-[4/5] w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryWine}
-            alt="Glass of red Georgian wine with a qvevri amphora in the background"
+            src={galleryMountainMural}
+            alt="Dining alcove with a hand-painted mountain mural and rocky stone walls"
             width={1024}
             height={1024}
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryTable}
-            alt="Wooden supra table set with candles and shared dishes in the evening"
+            src={galleryWideRoom}
+            alt="Wide view of the dining room with exposed brick, barrel-vaulted ceiling and bar"
             width={1024}
             height={1024}
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryBread}
-            alt="Hands tearing open oven-baked cheese bread at the table"
+            src={galleryStaircase}
+            alt="Dining room with staircase, mountain murals and candlelit tables"
             width={1024}
             height={1024}
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryLantern}
-            alt="Warm lantern light on a terracotta courtyard wall at dusk"
+            src={galleryWindowDetail}
+            alt="Table set against an arched window with traditional Georgian dolls and candlesticks"
             width={1024}
             height={1024}
             loading="lazy"
