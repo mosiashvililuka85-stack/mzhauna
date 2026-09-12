@@ -219,7 +219,7 @@ function Index() {
             <article className="overflow-hidden rounded-2xl bg-cream ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
               <img
                 src={menuKhinkali}
-                alt="Steaming basket of plump khinkali dumplings on a clay plate"
+                alt="Plump hand-pleated khinkali dumplings served on a ceramic plate"
                 width={1024}
                 height={832}
                 loading="lazy"
@@ -252,7 +252,7 @@ function Index() {
             <article className="overflow-hidden rounded-2xl bg-cream ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
               <img
                 src={menuKhachapuri}
-                alt="Georgian adjaruli khachapuri bread boat with melted cheese and butter"
+                alt="Georgian adjaruli khachapuri bread boat with cheese, egg yolk and butter"
                 width={1024}
                 height={832}
                 loading="lazy"
@@ -285,7 +285,7 @@ function Index() {
             <article className="overflow-hidden rounded-2xl bg-cream ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
               <img
                 src={menuSalad}
-                alt="Fresh Georgian tomato cucumber salad with herbs in a wooden bowl"
+                alt="Fresh Georgian tomato and cucumber salad with herbs in a handled ceramic dish"
                 width={1024}
                 height={832}
                 loading="lazy"
