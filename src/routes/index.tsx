@@ -130,7 +130,7 @@ function Index() {
           <div className="reveal md:col-span-5" style={{ animationDelay: "260ms" }}>
             <img
               src={heroImg}
-              alt="Overhead view of a Georgian supra table with khinkali, khachapuri, candles and clay plates"
+              alt="Long wooden supra table set with sunflowers, crystal glasses and brick walls at Mzhauna"
               width={1024}
               height={1280}
               className="aspect-[4/5] w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
