@@ -3,17 +3,25 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reviews } from "@/components/Reviews";
 import { ReservationForm } from "@/components/ReservationForm";
 
-import heroImg from "@/assets/hero.jpg";
-import aboutImg from "@/assets/about.jpg";
+import heroAsset from "@/assets/interior-long-table-sunflowers.jpg.asset.json";
+import aboutAsset from "@/assets/interior-bar-guitar.jpg.asset.json";
 import menuKhinkali from "@/assets/menu-khinkali.jpg";
 import menuKhachapuri from "@/assets/menu-khachapuri.jpg";
 import menuSalad from "@/assets/menu-salad.jpg";
-import galleryTableware from "@/assets/gallery-tableware.jpg";
-import galleryWine from "@/assets/gallery-wine.jpg";
-import galleryTable from "@/assets/gallery-table.jpg";
-import galleryBread from "@/assets/gallery-bread.jpg";
-import galleryLantern from "@/assets/gallery-lantern.jpg";
+import galleryLongTableAsset from "@/assets/interior-long-table-blue-chairs.jpg.asset.json";
+import galleryMountainMuralAsset from "@/assets/interior-mountain-mural.jpg.asset.json";
+import galleryWideRoomAsset from "@/assets/interior-dining-room-wide.jpg.asset.json";
+import galleryStaircaseAsset from "@/assets/interior-dining-room-staircase.jpg.asset.json";
+import galleryWindowDetailAsset from "@/assets/interior-table-window-dolls.jpg.asset.json";
 import mapImg from "@/assets/map.jpg";
+
+const heroImg = heroAsset.url;
+const aboutImg = aboutAsset.url;
+const galleryLongTable = galleryLongTableAsset.url;
+const galleryMountainMural = galleryMountainMuralAsset.url;
+const galleryWideRoom = galleryWideRoomAsset.url;
+const galleryStaircase = galleryStaircaseAsset.url;
+const galleryWindowDetail = galleryWindowDetailAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -122,7 +130,7 @@ function Index() {
           <div className="reveal md:col-span-5" style={{ animationDelay: "260ms" }}>
             <img
               src={heroImg}
-              alt="Overhead view of a Georgian supra table with khinkali, khachapuri, candles and clay plates"
+              alt="Long wooden supra table set with sunflowers, crystal glasses and brick walls at Mzhauna"
               width={1024}
               height={1280}
               className="aspect-[4/5] w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
@@ -157,7 +165,7 @@ function Index() {
         <div className="md:col-span-5">
           <img
             src={aboutImg}
-            alt="Warm Georgian old-town courtyard with terracotta walls, hanging lanterns, and a wooden dinner table"
+            alt="Warm brick-walled dining room with bar, guitar and atmospheric lighting at Mzhauna"
             width={1024}
             height={1280}
             loading="lazy"
@@ -312,44 +320,44 @@ function Index() {
           არქივი · The room
         </p>
         <h2 className="mt-3 text-balance font-display text-4xl font-semibold md:text-5xl">
-          A courtyard that glows
+          The stone room
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
           <img
-            src={galleryTableware}
-            alt="Clay plates and craft ceramic tableware on walnut wood"
+            src={galleryLongTable}
+            alt="Long wooden supra table with blue cushioned chairs, sunflowers and crystal glasses"
             width={1024}
             height={1280}
             loading="lazy"
             className="col-span-2 row-span-2 aspect-[4/5] w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryWine}
-            alt="Glass of red Georgian wine with a qvevri amphora in the background"
+            src={galleryMountainMural}
+            alt="Dining alcove with a hand-painted mountain mural and rocky stone walls"
             width={1024}
             height={1024}
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryTable}
-            alt="Wooden supra table set with candles and shared dishes in the evening"
+            src={galleryWideRoom}
+            alt="Wide view of the dining room with exposed brick, barrel-vaulted ceiling and bar"
             width={1024}
             height={1024}
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryBread}
-            alt="Hands tearing open oven-baked cheese bread at the table"
+            src={galleryStaircase}
+            alt="Dining room with staircase, mountain murals and candlelit tables"
             width={1024}
             height={1024}
             loading="lazy"
             className="aspect-square w-full rounded-2xl object-cover bg-paper ring-1 ring-black/5"
           />
           <img
-            src={galleryLantern}
-            alt="Warm lantern light on a terracotta courtyard wall at dusk"
+            src={galleryWindowDetail}
+            alt="Table set against an arched window with traditional Georgian dolls and candlesticks"
             width={1024}
             height={1024}
             loading="lazy"
