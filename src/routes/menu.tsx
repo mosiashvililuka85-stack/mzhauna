@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { foodSections, drinkSections, type MenuSection } from "@/data/menu";
-import { ReservationForm } from "@/components/ReservationForm";
+
 import { Reviews } from "@/components/Reviews";
 import menuKhinkali from "@/assets/menu-khinkali.jpg";
 

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { Reviews } from "@/components/Reviews";
-import { ReservationForm } from "@/components/ReservationForm";
+
 import { foodSections } from "@/data/menu";
 
 import heroAsset from "@/assets/interior-long-table-sunflowers.jpg.asset.json";
@@ -84,10 +84,10 @@ function Index() {
             </a>
           </nav>
           <a
-            href="#reserve"
+            href="tel:+995596638484"
             className="rounded-full bg-terracotta px-4 py-2 text-[13px] font-medium text-cream ring-1 ring-black/5 transition-colors hover:bg-wine"
           >
-            Book a table
+            Call to reserve
           </a>
         </div>
       </header>
