@@ -85,10 +85,10 @@ function MenuPage() {
             </a>
           </nav>
           <a
-            href="tel:+995596638484"
+            href="#reserve"
             className="rounded-full bg-terracotta px-4 py-2 text-[13px] font-medium text-cream ring-1 ring-black/5 transition-colors hover:bg-wine"
           >
-            Call to reserve
+            Reserve a table
           </a>
         </div>
       </header>
