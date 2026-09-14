@@ -314,6 +314,47 @@ function Index() {
               </div>
             </article>
           </div>
+
+          {/* FULL FOOD LIST */}
+          <div className="mt-20 grid gap-14 md:grid-cols-2 md:gap-x-14">
+            {foodSections.map((section) => (
+              <section key={section.id}>
+                <h3 className="border-b border-ink/15 pb-3 font-display text-2xl font-semibold md:text-3xl">
+                  {section.ka}
+                  <span className="ml-3 align-middle font-body text-[11px] font-normal tracking-[0.25em] uppercase text-mud">
+                    {section.en}
+                  </span>
+                </h3>
+                <ul className="mt-5 space-y-4">
+                  {section.items.map((item) => (
+                    <li key={item.en} className="flex items-baseline gap-4">
+                      <div className="min-w-0">
+                        <p className="font-display text-lg font-semibold leading-tight">
+                          {item.ka}
+                        </p>
+                        <p className="text-sm text-ink">{item.en}</p>
+                        {item.note && (
+                          <p className="mt-1 text-sm text-pretty text-mud">{item.note}</p>
+                        )}
+                      </div>
+                      <span className="ml-auto shrink-0 font-mono text-sm text-terracotta">
+                        {item.price}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
+
+          <div className="mt-14 text-center">
+            <Link
+              to="/menu"
+              className="inline-block rounded-full bg-terracotta px-6 py-3 text-sm font-medium text-cream ring-1 ring-black/5 transition-colors hover:bg-wine"
+            >
+              Drinks & full menu
+            </Link>
+          </div>
         </div>
       </section>
 
