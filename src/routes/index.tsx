@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { Reviews } from "@/components/Reviews";
 import { ReservationForm } from "@/components/ReservationForm";
+import { foodSections } from "@/data/menu";
 
 import heroAsset from "@/assets/interior-long-table-sunflowers.jpg.asset.json";
 import aboutAsset from "@/assets/interior-bar-guitar.jpg.asset.json";
