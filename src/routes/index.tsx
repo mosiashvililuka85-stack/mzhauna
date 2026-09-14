@@ -421,11 +421,11 @@ function Index() {
               დაჯავშნა · Reserve
             </p>
             <h2 className="mt-3 text-balance font-display text-4xl font-semibold md:text-5xl">
-              Book the long table
+              Call to book
             </h2>
             <p className="mt-5 max-w-[36ch] text-pretty text-cream/70">
-              Send a request and we'll call back to confirm. Courtyard tables go quickly on
-              Friday and Saturday evenings.
+              We take reservations by phone. Courtyard tables go quickly on Friday and
+              Saturday evenings.
             </p>
             <Link
               to="/menu"
@@ -435,7 +435,22 @@ function Index() {
             </Link>
           </div>
           <div className="md:col-span-7">
-            <ReservationForm />
+            <div className="rounded-2xl border border-cream/15 bg-cream/5 p-8 md:p-10">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-cream/60">
+                Phone
+              </p>
+              <a
+                href="tel:+995596638484"
+                className="mt-2 block font-display text-4xl font-semibold tracking-tight text-cream transition-colors hover:text-gold md:text-5xl"
+              >
+                +995 596 63 84 84
+              </a>
+              <p className="mt-4 max-w-[42ch] text-sm leading-relaxed text-cream/70">
+                Daily · 12:00 — 23:30
+                <br />
+                For large supras or same-day tables, a quick call is the fastest way.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -81,14 +81,14 @@ function MenuPage() {
               Reviews
             </a>
             <a href="#reserve" className="transition-colors hover:text-terracotta">
-              Reserve
+              Contact
             </a>
           </nav>
           <a
-            href="#reserve"
+            href="tel:+995596638484"
             className="rounded-full bg-terracotta px-4 py-2 text-[13px] font-medium text-cream ring-1 ring-black/5 transition-colors hover:bg-wine"
           >
-            Book a table
+            Call to reserve
           </a>
         </div>
       </header>
